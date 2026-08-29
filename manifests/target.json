@@ -1,0 +1,32 @@
+{
+  "files": [
+    {"bytes": 1570, "name": ".gitattributes", "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930"},
+    {"bytes": 3986, "name": "BUILD_MANIFEST.json", "sha256": "4521df2d687688e154afae2166fe6cd3f3b1d52299e61637bf936fedb00ce368"},
+    {"bytes": 11544, "name": "LICENSE", "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"},
+    {"bytes": 2289, "name": "README.md", "sha256": "e803316d3cd87f80504910ba2c123ced4fe92a3ef6ef949edb6e0ae7892087b3"},
+    {"bytes": 1782, "name": "SHA256SUMS", "sha256": "652b8601b431b3f80b43c0d121d538edf8c54f2a980f393be047d69c551d9ad3"},
+    {"bytes": 2169, "name": "VALIDATION_REPORT.json", "sha256": "16c9fd663fad49f7000a12ce32d1c0e7640c9a1061dbb90eb3c169116a44ec5f"},
+    {"bytes": 23525, "name": "build_qwen38_abliterated_nvfp4.py", "sha256": "8b18cfb668927f761dd9e590b7c36db011607824047d421dbec8549cbfc86627"},
+    {"bytes": 41176, "name": "calibration_snapshot.json", "sha256": "b97b1caa8f9676fd7144cc12c9cde3a6d69fef9a26accdf8a4aa82ac2cb64b76"},
+    {"bytes": 8952, "name": "chat_template.jinja", "sha256": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"},
+    {"bytes": 15698, "name": "config.json", "sha256": "0b2c05e53e721307ebcb1696881cead10e01a3ca7f09db28eb0477b55cc5692c"},
+    {"bytes": 214, "name": "generation_config.json", "sha256": "d0d0ed2e37cdfafef4a5067d5ea2407b05f4fb50526e47c008a5b235d50240fb"},
+    {"bytes": 4999186512, "name": "model-00001-of-00004.safetensors", "sha256": "b031a9572ba71cc278a435722b4a76ed6f58e2309c42e3a7153e3dddc70227bc"},
+    {"bytes": 4956656288, "name": "model-00002-of-00004.safetensors", "sha256": "51cbd44471bce38f9cbe5cab9449662310e69c6238ed5355466c0ec5531cd4b6"},
+    {"bytes": 4973006664, "name": "model-00003-of-00004.safetensors", "sha256": "b5292fef77ad2b45eec1f4f3e1b8d4834ea44bc6bffcb4189209c74d278971f1"},
+    {"bytes": 4781029712, "name": "model-00004-of-00004.safetensors", "sha256": "e9fbe4c34918fb161aa705b8a4be512025769775e5b3b7594448f04e9c288261"},
+    {"bytes": 849400424, "name": "model-mtp-bf16.safetensors", "sha256": "90fa0e3eed5a647c035c6df9ecabc416c0f8d573ff84ac12485b085f00a7cdf2"},
+    {"bytes": 278231, "name": "model.safetensors.index.json", "sha256": "7d5b403686ef104b6d1e2e6c2dec7f55981e1d1ece9ce8023992bd1a4274c916"},
+    {"bytes": 1191, "name": "processor_config.json", "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1"},
+    {"bytes": 256, "name": "recipe.yaml", "sha256": "53030a44e901b94f524e7056cbcbc8c562b67979016288e2bffdb7141c01dab2"},
+    {"bytes": 19989424, "name": "tokenizer.json", "sha256": "445a1c450cb82eba3dac6d4cac5d6ce9a6be0ab6e326bf919934d71e604a871f"},
+    {"bytes": 1269, "name": "tokenizer_config.json", "sha256": "dcb88c4a1dff8096b6fd919e458d987351b499f86db65d1b997ed515a90cc35c"},
+    {"bytes": 1305, "name": "vllm_uuid_sitecustomize.py", "sha256": "6770bf8d72072a8484806876a0c0449a63c83dbe1e2133374b90472828261d1e"}
+  ],
+  "repository": "aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP",
+  "revision": "16b43988bddfbe3ae0fd172c02c4ad9099c678de",
+  "role": "target",
+  "schema_version": 1,
+  "total_bytes": 20579664181,
+  "total_files": 22
+}
