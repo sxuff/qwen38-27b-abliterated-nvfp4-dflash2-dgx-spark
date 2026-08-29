@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "commit_exercised": "b7f115f1f135ce6b8c704e94d9496f25ec2b9680",
+  "service": {
+    "model_unit_active": true,
+    "model_unit_enabled": true,
+    "proxy_unit_active": true,
+    "proxy_unit_enabled": true,
+    "stock_unit_disabled": true,
+    "unauthenticated_models_http_status": 401,
+    "upstream_binding": "127.0.0.1:8002",
+    "authenticated_client_binding": "172.17.0.1:8001",
+    "container_owner": "systemd:qwen38-abliterated-dflash2",
+    "container_mode": "dflash2",
+    "container_swap_enabled": false
+  },
+  "direct_authenticated_client": {
+    "text_canary": "HARDENED_SERVICE_OK",
+    "tool_call": {
+      "name": "get_weather",
+      "arguments": {
+        "city": "Paris"
+      }
+    },
+    "vision": {
+      "answer": "red blue",
+      "image_tokens": 64
+    }
+  },
+  "hermes_client": {
+    "provider": "qwen38-gx10",
+    "model": "qwen38-27b-ara-abliterated-nvfp4-mtp",
+    "terminal_tool_side_effect": "HARDENED_HERMES_OK",
+    "native_vision_result": "NO-GO 12.33 41.44"
+  },
+  "passed": true
+}

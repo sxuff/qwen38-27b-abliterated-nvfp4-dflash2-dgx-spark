@@ -4,7 +4,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 python3 -m unittest discover -s "$ROOT/tests" -p 'test_*.py'
 python3 -m py_compile "$ROOT"/scripts/*.py "$ROOT"/deploy/*.py
 for f in "$ROOT"/scripts/*.sh "$ROOT"/deploy/*.sh; do bash -n "$f"; done
-for f in "$ROOT/protocol.json" "$ROOT/fixtures.json" "$ROOT/manifests/target.json" "$ROOT/manifests/draft.json" "$ROOT/runtime-manifest.json" "$ROOT/preregistration.json" "$ROOT/results/summary.json" "$ROOT/evidence/quality-failures.json" "$ROOT/evidence/baseline-ladder.json" "$ROOT/evidence/promotion.json" "$ROOT/evidence/qualification.json"; do
+for f in "$ROOT/protocol.json" "$ROOT/fixtures.json" "$ROOT/manifests/target.json" "$ROOT/manifests/draft.json" "$ROOT/runtime-manifest.json" "$ROOT/preregistration.json" "$ROOT/results/summary.json" "$ROOT/evidence/quality-failures.json" "$ROOT/evidence/baseline-ladder.json" "$ROOT/evidence/promotion.json" "$ROOT/evidence/qualification.json" "$ROOT/evidence/hardened-cutover.json" "$ROOT/evidence/hardened-integration.json"; do
   python3 -m json.tool "$f" >/dev/null
 done
 python3 "$ROOT/scripts/verify_seal.py" >/dev/null

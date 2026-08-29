@@ -130,7 +130,7 @@ systemctl --user enable --now \
   qwen38-abliterated-dflash2-proxy.service
 ```
 
-SGLang itself stays on host loopback at `127.0.0.1:8002`. A bearer-auth proxy binds to the Docker bridge at `172.17.0.1:8001`, allowing a containerized local client to connect without exposing an unauthenticated inference endpoint to other bridge containers or the LAN.
+SGLang itself stays on host loopback at `127.0.0.1:8002`. A bearer-auth proxy binds to the Docker bridge at `172.17.0.1:8001`, allowing a containerized local client to connect without exposing an unauthenticated inference endpoint to other bridge containers or the LAN. The exercised cutover, 401 rejection, text canary, tool call, native vision request, and real Hermes tool/vision loops are recorded in [`evidence/hardened-integration.json`](evidence/hardened-integration.json).
 
 ## Benchmark
 
