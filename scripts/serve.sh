@@ -28,7 +28,7 @@ if docker inspect "$NAME" >/dev/null 2>&1; then
   [[ "$owned" == true ]] || { echo "refusing to touch unowned container $NAME" >&2; exit 2; }
   docker rm -f "$NAME" >/dev/null
 fi
-args=(python3 -m sglang.launch_server --trust-remote-code --model-path /model --served-model-name qwen38-27b-ara-abliterated-nvfp4 --mem-fraction-static "$MEM_FRACTION_STATIC" --attention-backend flashinfer --chunked-prefill-size 8192 --disable-prefill-cuda-graph --kv-cache-dtype fp8_e4m3 --mamba-ssm-dtype bfloat16 --mamba-full-memory-ratio 4.21 --mamba-radix-cache-strategy extra_buffer --max-mamba-cache-size 50 --max-running-requests 10 --context-length 262144 --reasoning-parser qwen3 --tool-call-parser qwen3_coder --sampling-defaults model --enable-metrics --enable-cache-report --host "$HOST" --port "$PORT")
+args=(python3 -m sglang.launch_server --trust-remote-code --model-path /model --served-model-name qwen38-27b-ara-abliterated-nvfp4-mtp --mem-fraction-static "$MEM_FRACTION_STATIC" --attention-backend flashinfer --chunked-prefill-size 8192 --disable-prefill-cuda-graph --kv-cache-dtype fp8_e4m3 --mamba-ssm-dtype bfloat16 --mamba-full-memory-ratio 4.21 --mamba-radix-cache-strategy extra_buffer --max-mamba-cache-size 50 --max-running-requests 10 --context-length 262144 --reasoning-parser qwen3 --tool-call-parser qwen3_coder --sampling-defaults model --enable-metrics --enable-cache-report --host "$HOST" --port "$PORT")
 volumes=(-v "$MODEL_DIR:/model:ro")
 if [[ "$MODE" == dflash2 ]]; then
   draft_parent="$(dirname "$DRAFT_DIR")"

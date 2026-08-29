@@ -14,7 +14,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-MODEL = 'qwen38-27b-ara-abliterated-nvfp4'
+MODEL = 'qwen38-27b-ara-abliterated-nvfp4-mtp'
 SANDBOX_IMAGE = os.environ.get(
     'SANDBOX_IMAGE', 'sxuff/qwen38-27b-abliterated-dflash2:2026-08-29'
 )

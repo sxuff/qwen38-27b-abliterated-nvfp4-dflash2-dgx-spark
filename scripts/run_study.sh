@@ -27,7 +27,7 @@ run_arm(){
   docker inspect -f '{{.State.Running}}' "$NAME" 2>/dev/null | grep -qx true || { docker logs "$NAME" > "$RUN_ROOT/$arm-server.log" 2>&1 || true; return 1; }
   sleep 5
  done
- curl -fsS http://127.0.0.1:8001/v1/models | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["data"][0]["id"]=="qwen38-27b-ara-abliterated-nvfp4",d'
+ curl -fsS http://127.0.0.1:8001/v1/models | python3 -c 'import json,sys; d=json.load(sys.stdin); assert d["data"][0]["id"]=="qwen38-27b-ara-abliterated-nvfp4-mtp",d'
  python3 "$ROOT/scripts/watchdog.py" --output "$RUN_ROOT/$arm-telemetry.jsonl" --stop "$RUN_ROOT/$arm-stop" --incident "$RUN_ROOT/$arm-incident.json" --container "$NAME" --baseline-swap "$baseline_swap" & watchdog=$!
  set +e
  python3 "$ROOT/scripts/benchmark.py" --arm "$arm" --protocol "$ROOT/protocol.json" --fixtures "$ROOT/fixtures.json" --output "$RUN_ROOT/$arm.json"
