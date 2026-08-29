@@ -1,0 +1,38 @@
+{
+  "mem_available_after_bytes": 31561904128,
+  "mode": "no-spec",
+  "passed": true,
+  "rows": [
+    {
+      "completion_tokens": 4,
+      "finish_reason": "stop",
+      "label": "tiny",
+      "prompt_tokens": 18,
+      "wall_seconds": 12.255499792983755
+    },
+    {
+      "completion_tokens": 6,
+      "finish_reason": "stop",
+      "label": "prefill_512_a",
+      "prompt_tokens": 1110,
+      "wall_seconds": 1.0094858259544708
+    },
+    {
+      "completion_tokens": 6,
+      "finish_reason": "stop",
+      "label": "prefill_512_b",
+      "prompt_tokens": 1230,
+      "wall_seconds": 0.9552598730078898
+    },
+    {
+      "completion_tokens": 256,
+      "finish_reason": "length",
+      "label": "prefill_1k_output_256",
+      "prompt_tokens": 3289,
+      "wall_seconds": 22.248842025990598
+    }
+  ],
+  "schema_version": 1,
+  "swap_growth_bytes": 0,
+  "target": "aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP@16b43988bddfbe3ae0fd172c02c4ad9099c678de"
+}

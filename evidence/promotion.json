@@ -1,0 +1,40 @@
+{
+  "mem_available_bytes": 29675937792,
+  "models": [
+    "qwen38-27b-ara-abliterated-nvfp4-mtp"
+  ],
+  "passed": true,
+  "swap_used_bytes": 941518848,
+  "text": {
+    "answer": "ABLITERATED_DFLASH2_READY",
+    "usage": {
+      "completion_tokens": 8,
+      "prompt_tokens": 23,
+      "prompt_tokens_details": null,
+      "reasoning_tokens": 0,
+      "total_tokens": 31
+    },
+    "wall_seconds": 9.843343190965243
+  },
+  "tool": {
+    "arguments": {
+      "city": "Paris"
+    },
+    "name": "get_weather",
+    "wall_seconds": 0.8150945120141841
+  },
+  "vision": {
+    "answer": "red blue",
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 94,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 64
+      },
+      "reasoning_tokens": 0,
+      "total_tokens": 97
+    },
+    "wall_seconds": 0.34989571396727115
+  }
+}

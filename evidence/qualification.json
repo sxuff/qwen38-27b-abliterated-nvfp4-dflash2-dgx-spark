@@ -1,0 +1,27 @@
+{
+  "deployment_note": "The optional DFlash2 profile is reversible and introduced no additional automatic-quality failures, but it is not a passing frozen qualification.",
+  "gate": {
+    "dflash_active": true,
+    "operational_complete": true,
+    "quality_complete": false,
+    "quality_required": true,
+    "safety_eligible": true,
+    "study_passed": false
+  },
+  "measured": {
+    "aggregate_median_speed_ratio": 3.359895168271474,
+    "dflash2_accept_length": 5.95,
+    "dflash2_accept_rate": 0.7071428571428572,
+    "dflash2_median_whole_request_tps": 41.43505141917612,
+    "dflash2_quality_passes": 23,
+    "dflash2_verify_calls": 1156.0,
+    "exact_output_matches": 16,
+    "no_spec_median_whole_request_tps": 12.332245306478633,
+    "no_spec_quality_passes": 23,
+    "paired_rows": 27
+  },
+  "reason": "The frozen protocol required every automatic quality row to pass; both arms scored 23/27.",
+  "schema_version": 1,
+  "study_id": "qwen38-ara-abliterated-nvfp4-dflash2-single-gb10-v1",
+  "verdict": "NO_GO"
+}

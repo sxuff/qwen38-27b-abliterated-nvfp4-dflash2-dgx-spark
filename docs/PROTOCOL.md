@@ -12,4 +12,4 @@ This repository reports one paired operational sweep on one NVIDIA GB10.
 - This is a single sweep, not a multi-day performance estimate.
 - The fixed no-spec then DFlash2 order is disclosed. It does not isolate thermal or run-order drift.
 
-The machine-readable frozen contract is [`protocol.json`](../protocol.json).
+The machine-readable frozen contract is [`protocol.json`](../protocol.json). It required every automatic quality row to pass. The completed sweep scored 23/27 in both arms, so the frozen qualification verdict is **NO-GO** even though operational completion, safety, and DFlash activation passed. Shared failures remain failures and are not relabeled post hoc.

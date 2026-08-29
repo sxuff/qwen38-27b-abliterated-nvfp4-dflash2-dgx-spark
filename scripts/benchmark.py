@@ -255,6 +255,7 @@ def main() -> int:
     if args.arm not in protocol['arms']:
         raise SystemExit(f'arm {args.arm!r} is not sealed')
     repetitions = int(protocol['request_contract']['repetitions_per_fixture'])
+    planned_rows = len(fixtures) * repetitions
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     before = meminfo()
@@ -299,14 +300,20 @@ def main() -> int:
                 'current_memory': meminfo(),
                 'rows': rows,
                 'errors': errors,
+                'collection_complete': False,
+                'runtime_success': False,
                 'complete': False,
             }
             output_path.write_text(json.dumps(output, indent=2, sort_keys=True) + '\n')
     after = meminfo()
+    collection_complete = len(rows) == planned_rows
+    runtime_success = collection_complete and not errors
     output.update({
         'current_memory': after,
         'swap_growth_bytes': max(0, after['swap_used_bytes'] - before['swap_used_bytes']),
-        'complete': True,
+        'collection_complete': collection_complete,
+        'runtime_success': runtime_success,
+        'complete': runtime_success,
     })
     output_path.write_text(json.dumps(output, indent=2, sort_keys=True) + '\n')
     print(json.dumps({
@@ -318,7 +325,7 @@ def main() -> int:
         'mem_available_bytes': after['mem_available_bytes'],
         'output': str(output_path),
     }, sort_keys=True))
-    return 0
+    return 0 if runtime_success else 1
 
 
 if __name__ == '__main__':

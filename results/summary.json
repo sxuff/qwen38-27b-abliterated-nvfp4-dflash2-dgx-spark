@@ -1,0 +1,499 @@
+{
+  "arm_order": [
+    "no-spec",
+    "dflash2"
+  ],
+  "arms": {
+    "dflash2": {
+      "all_quality_pass": false,
+      "completion_tokens": 8196,
+      "errors": 0,
+      "median_end_to_end_completion_tokens_per_second": 41.43505141917612,
+      "minimum_mem_available_bytes": 29567787008,
+      "per_fixture": {
+        "code": {
+          "completion_tokens": 441,
+          "median_end_to_end_completion_tokens_per_second": 50.149400522916025,
+          "median_ttft_seconds": 0.13293206196976826,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "copy_json": {
+          "completion_tokens": 3105,
+          "median_end_to_end_completion_tokens_per_second": 70.58263721245542,
+          "median_ttft_seconds": 0.21216625499073416,
+          "quality_passes": 2,
+          "rows": 3
+        },
+        "copy_python": {
+          "completion_tokens": 3567,
+          "median_end_to_end_completion_tokens_per_second": 68.84753491329666,
+          "median_ttft_seconds": 0.5841021770029329,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "json": {
+          "completion_tokens": 60,
+          "median_end_to_end_completion_tokens_per_second": 30.28713153323723,
+          "median_ttft_seconds": 0.20874223398277536,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "literal": {
+          "completion_tokens": 12,
+          "median_end_to_end_completion_tokens_per_second": 9.221078933137068,
+          "median_ttft_seconds": 0.3334400380263105,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "math": {
+          "completion_tokens": 438,
+          "median_end_to_end_completion_tokens_per_second": 41.3719626412635,
+          "median_ttft_seconds": 0.20509887399384752,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "prose": {
+          "completion_tokens": 228,
+          "median_end_to_end_completion_tokens_per_second": 22.690904764509497,
+          "median_ttft_seconds": 0.20814752095611766,
+          "quality_passes": 0,
+          "rows": 3
+        },
+        "reasoning": {
+          "completion_tokens": 267,
+          "median_end_to_end_completion_tokens_per_second": 49.412194408335175,
+          "median_ttft_seconds": 0.21484995301580057,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "tool": {
+          "completion_tokens": 78,
+          "median_end_to_end_completion_tokens_per_second": 39.91953388848041,
+          "median_ttft_seconds": 0.4308467690134421,
+          "quality_passes": 3,
+          "rows": 3
+        }
+      },
+      "performance_rows": 18,
+      "quality_passes": 23,
+      "rows": 27,
+      "spec_accept_length_final": 5.95,
+      "spec_accept_rate_final": 0.7071428571428572,
+      "spec_verify_calls_final": 1156.0,
+      "swap_growth_bytes": 0,
+      "telemetry_samples": 74
+    },
+    "no-spec": {
+      "all_quality_pass": false,
+      "completion_tokens": 8314,
+      "errors": 0,
+      "median_end_to_end_completion_tokens_per_second": 12.332245306478633,
+      "minimum_mem_available_bytes": 29713260544,
+      "per_fixture": {
+        "code": {
+          "completion_tokens": 543,
+          "median_end_to_end_completion_tokens_per_second": 12.368142169451207,
+          "median_ttft_seconds": 0.10544079501414672,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "copy_json": {
+          "completion_tokens": 3105,
+          "median_end_to_end_completion_tokens_per_second": 12.35987482056769,
+          "median_ttft_seconds": 0.179391873505665,
+          "quality_passes": 2,
+          "rows": 3
+        },
+        "copy_python": {
+          "completion_tokens": 3567,
+          "median_end_to_end_completion_tokens_per_second": 12.364314604019665,
+          "median_ttft_seconds": 0.5679377980413847,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "json": {
+          "completion_tokens": 60,
+          "median_end_to_end_completion_tokens_per_second": 11.707415445063365,
+          "median_ttft_seconds": 0.17532271600794047,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "literal": {
+          "completion_tokens": 12,
+          "median_end_to_end_completion_tokens_per_second": 7.94919317688005,
+          "median_ttft_seconds": 0.2650593870203011,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "math": {
+          "completion_tokens": 495,
+          "median_end_to_end_completion_tokens_per_second": 12.367916602298173,
+          "median_ttft_seconds": 0.1727054900256917,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "prose": {
+          "completion_tokens": 210,
+          "median_end_to_end_completion_tokens_per_second": 12.269769077949887,
+          "median_ttft_seconds": 0.17329874995630234,
+          "quality_passes": 0,
+          "rows": 3
+        },
+        "reasoning": {
+          "completion_tokens": 244,
+          "median_end_to_end_completion_tokens_per_second": 12.27102983850509,
+          "median_ttft_seconds": 0.16962209896882996,
+          "quality_passes": 3,
+          "rows": 3
+        },
+        "tool": {
+          "completion_tokens": 78,
+          "median_end_to_end_completion_tokens_per_second": 11.870769765353794,
+          "median_ttft_seconds": 0.6576576539664529,
+          "quality_passes": 3,
+          "rows": 3
+        }
+      },
+      "performance_rows": 18,
+      "quality_passes": 23,
+      "rows": 27,
+      "spec_accept_length_final": 0.0,
+      "spec_accept_rate_final": 0.0,
+      "spec_verify_calls_final": null,
+      "swap_growth_bytes": 0,
+      "telemetry_samples": 345
+    }
+  },
+  "gate": {
+    "dflash_active": true,
+    "operational_complete": true,
+    "quality_complete": false,
+    "quality_required": true,
+    "safety_eligible": true,
+    "study_passed": false
+  },
+  "metric_definitions": {
+    "end_to_end_completion_tokens_per_second": "completion tokens divided by whole request wall time, including prefill and first-token latency"
+  },
+  "paired": {
+    "aggregate_median_speed_ratio": 3.359895168271474,
+    "exact_output_matches": 16,
+    "median_paired_speed_ratio": 3.361033987418778,
+    "payload_matches": 27,
+    "performance_exact_output_matches": 9,
+    "performance_rows": 18,
+    "rows": 27,
+    "rows_detail": [
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 49.452882043176416,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "code",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.39859154896271,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 3.988588691536801
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 50.149400522916025,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "code",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.363035828405442,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 4.056398543122574
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 50.28091901602623,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "code",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.368142169451207,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 4.065357458472461
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 1.4794214407697006,
+        "dflash2_quality_pass": false,
+        "exact_output_match": true,
+        "fixture_id": "copy_json",
+        "no_spec_end_to_end_completion_tokens_per_second": 1.5528246336178617,
+        "no_spec_quality_pass": false,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 0.952729244977817
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 70.63565011571,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "copy_json",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.35987482056769,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 5.714916303049233
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 70.58263721245542,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "copy_json",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.402422036513586,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 5.691036557589741
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 68.84753491329666,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "copy_python",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.29195658603031,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 5.6010232733445555
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 68.34030882469807,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "copy_python",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.364314604019665,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 5.5272217679159095
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 70.41753062762383,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "copy_python",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.397131423297129,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 5.680147142369783
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 34.34704863449558,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "json",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.196442885217165,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 2.816152951950138
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 30.11808667940114,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "json",
+        "no_spec_end_to_end_completion_tokens_per_second": 11.692038179928167,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 2.5759483689597547
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 30.28713153323723,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "json",
+        "no_spec_end_to_end_completion_tokens_per_second": 11.707415445063365,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 2.58700408090569
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 0.3985199039696046,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "literal",
+        "no_spec_end_to_end_completion_tokens_per_second": 0.28817720531116725,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 1.382898774173661
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 9.221078933137068,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "literal",
+        "no_spec_end_to_end_completion_tokens_per_second": 7.94919317688005,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 1.1600018678570114
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 10.997068910277585,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "literal",
+        "no_spec_end_to_end_completion_tokens_per_second": 9.468624172133882,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 1.161422051436143
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 41.49814019708873,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "math",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.28859291346194,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 3.3769643513561456
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 41.3719626412635,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "math",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.367916602298173,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 3.3451036234814095
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 41.10710526469136,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "math",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.372964825108134,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 3.3223326701191125
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 22.745489892104885,
+        "dflash2_quality_pass": false,
+        "exact_output_match": false,
+        "fixture_id": "prose",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.304615792389574,
+        "no_spec_quality_pass": false,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 1.8485331257700064
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 22.690904764509497,
+        "dflash2_quality_pass": false,
+        "exact_output_match": false,
+        "fixture_id": "prose",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.269769077949887,
+        "no_spec_quality_pass": false,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 1.8493342963795079
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 22.67468803754453,
+        "dflash2_quality_pass": false,
+        "exact_output_match": false,
+        "fixture_id": "prose",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.253743136872156,
+        "no_spec_quality_pass": false,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 1.8504295205368884
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 47.68670091565364,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "reasoning",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.270204784304394,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 3.886381829311664
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 49.412194408335175,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "reasoning",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.27102983850509,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 4.0267357392682195
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 51.30930558839614,
+        "dflash2_quality_pass": true,
+        "exact_output_match": false,
+        "fixture_id": "reasoning",
+        "no_spec_end_to_end_completion_tokens_per_second": 12.275541531292232,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 4.17979976342395
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 26.559547055995854,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "tool",
+        "no_spec_end_to_end_completion_tokens_per_second": 10.372589341493434,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 0,
+        "speed_ratio": 2.560551293566572
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 40.17268804690576,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "tool",
+        "no_spec_end_to_end_completion_tokens_per_second": 11.870769765353794,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 1,
+        "speed_ratio": 3.3841687473506874
+      },
+      {
+        "dflash2_end_to_end_completion_tokens_per_second": 39.91953388848041,
+        "dflash2_quality_pass": true,
+        "exact_output_match": true,
+        "fixture_id": "tool",
+        "no_spec_end_to_end_completion_tokens_per_second": 11.885591300514482,
+        "no_spec_quality_pass": true,
+        "payload_match": true,
+        "repetition": 2,
+        "speed_ratio": 3.3586493830351074
+      }
+    ]
+  },
+  "posthoc_diagnostic": {
+    "note": "The frozen quality gate is unchanged. Shared failures are reported for diagnosis and do not become passes.",
+    "shared_failed_fixture_ids": [
+      "copy_json",
+      "prose"
+    ]
+  },
+  "resolved_image_id": "sha256:d551df08e966aee2fbac67c231f4c7dfad291b02d3b5e59f082f753c85cd33dd",
+  "schema_version": 2,
+  "source_commit": "18ed3d1671e2dd1be4848a8051767910d5d771e9",
+  "source_tree_sha256": "8290ada4b8c3ea0eae48e6f4c26721fca38904a2692bb20d3be6cdb959ce4ee9",
+  "study_id": "qwen38-ara-abliterated-nvfp4-dflash2-single-gb10-v1"
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=Authenticated Docker-bridge proxy for Qwen3.8 ARA DFlash2
+After=qwen38-abliterated-dflash2.service
+Requires=qwen38-abliterated-dflash2.service
+PartOf=qwen38-abliterated-dflash2.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/qwen38-auth-proxy-service.sh
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=30
+
+[Install]
+WantedBy=default.target

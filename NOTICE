@@ -1,0 +1,21 @@
+Third-party notices
+===================
+
+This repository includes compatibility source derived from SGLang and distributed under the Apache License 2.0. A copy of that license is provided at `THIRD_PARTY_LICENSES/Apache-2.0.txt`.
+
+Upstream project: SGLang
+Source: https://github.com/sgl-project/sglang
+Pinned base commit: c4271c3fe1262fc2adbd162c33b25de5255251c5
+DFlash2 donor commit: c14312a66420b75ca9a11bf1817c4db1fa26b097
+Compatibility-overlay source: MiaAI-Lab/Qwen3.8-27B-NVFP4-DGX-Spark@c90d8c34cf795185ee8de736b7ded9bca3fe0de1
+
+The following distributed files are Apache-2.0-covered compatibility sources. They include compatibility changes or selected backports relative to the pinned SGLang base:
+
+- docker/overlay/sglang/kernels/ops/speculative/dflash.py
+- docker/overlay/sglang/srt/model_executor/model_runner_components/spec_aux_hidden_state.py
+- docker/overlay/sglang/srt/models/dflash.py
+- docker/overlay/sglang/srt/models/qwen3_5_mtp.py
+- docker/overlay/sglang/srt/speculative/dflash_utils.py
+- docker/overlay/sglang/srt/speculative/dflash_worker_v2.py
+
+Repository-authored orchestration, validation, reporting, and deployment scripts remain under the repository's MIT license. Model artifacts are not redistributed by this repository and retain their upstream licenses.

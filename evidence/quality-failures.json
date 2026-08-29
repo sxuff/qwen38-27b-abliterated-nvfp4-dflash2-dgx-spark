@@ -1,0 +1,100 @@
+{
+  "automatic_quality_passes": {
+    "dflash2": 23,
+    "no-spec": 23
+  },
+  "automatic_quality_rows_per_arm": 27,
+  "interpretation": {
+    "copy_json": "Repetition 0 returned empty visible content with finish_reason=stop and one completion token in both arms. This is retained as a real shared failure.",
+    "prose": "All three rows in each arm were coherent three-sentence explanations, but the frozen lexical predicate required a preserv* substring. The outputs used equivalent matching/identity language. These remain frozen-checker failures, not post-hoc passes.",
+    "treatment": "DFlash2 introduced no additional automatic-quality failures beyond the no-spec arm."
+  },
+  "rows": [
+    {
+      "arm": "no-spec",
+      "completion_tokens": 1,
+      "content": "",
+      "finish_reason": "stop",
+      "fixture_id": "copy_json",
+      "payload_sha256": "d922e184f4eadd36e99467ef071efc6f205945f9b573bda77e353e207a981293",
+      "quality_detail": "exact=False observed_chars=0 expected_chars=3470",
+      "repetition": 0
+    },
+    {
+      "arm": "no-spec",
+      "completion_tokens": 70,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "repetition": 0
+    },
+    {
+      "arm": "no-spec",
+      "completion_tokens": 70,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "repetition": 1
+    },
+    {
+      "arm": "no-spec",
+      "completion_tokens": 70,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then batch-verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the final output matches what the target model would have produced independently. This parallel verification process significantly increases throughput by reducing the number of sequential decoding steps required.",
+      "repetition": 2
+    },
+    {
+      "arm": "dflash2",
+      "completion_tokens": 1,
+      "content": "",
+      "finish_reason": "stop",
+      "fixture_id": "copy_json",
+      "payload_sha256": "d922e184f4eadd36e99467ef071efc6f205945f9b573bda77e353e207a981293",
+      "quality_detail": "exact=False observed_chars=0 expected_chars=3470",
+      "repetition": 0
+    },
+    {
+      "arm": "dflash2",
+      "completion_tokens": 76,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "repetition": 0
+    },
+    {
+      "arm": "dflash2",
+      "completion_tokens": 76,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "repetition": 1
+    },
+    {
+      "arm": "dflash2",
+      "completion_tokens": 76,
+      "content": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "finish_reason": "stop",
+      "fixture_id": "prose",
+      "payload_sha256": "c4a1cb23d9132ee9cccfebd3553bfd55567922c97f956f0feb240fb87e326ac5",
+      "quality_detail": "A smaller draft model rapidly generates candidate tokens, which are then verified in parallel by the larger target model. The target model accepts or rejects these candidates based on its own probability distribution, ensuring the output strictly matches what the target model would have produced. This verification step guarantees that the final output is identical to running the target model alone, while the parallel drafting significantly increases overall throughput.",
+      "repetition": 2
+    }
+  ],
+  "schema_version": 1,
+  "shared_failed_fixture_ids": [
+    "copy_json",
+    "prose"
+  ],
+  "study_id": "qwen38-ara-abliterated-nvfp4-dflash2-single-gb10-v1"
+}
