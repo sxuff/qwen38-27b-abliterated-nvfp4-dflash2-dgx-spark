@@ -1,5 +1,13 @@
 # Qwen3.8-27B ARA abliterated NVFP4 + DFlash2 on one DGX Spark
 
+## Run it
+
+```bash
+git clone https://github.com/sxuff/qwen38-27b-abliterated-nvfp4-dflash2-dgx-spark && cd qwen38-27b-abliterated-nvfp4-dflash2-dgx-spark && ./run.sh
+```
+
+Expected: **41.44 tok/s** median whole-request completion rate, single stream, prefill included (12.33 tok/s without DFlash2); the study's quality gate is NO-GO, see below — receipt: [`results/summary.json`](results/summary.json)
+
 A pinned SGLang recipe for serving `aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP` with DFlash2 speculative decoding on one NVIDIA GB10 system. The measured operational speedup was 3.36x. The frozen qualification verdict is **NO-GO** because the protocol required every automatic quality row to pass and both arms scored 23/27. DFlash2 is provided as an explicit, reversible deployment profile, not a qualified drop-in replacement.
 
 ![Qwen3.8-27B ARA abliterated DFlash2 result](assets/qwen38-abliterated-dflash2-result.png)
